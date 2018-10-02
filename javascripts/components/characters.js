@@ -15,4 +15,17 @@
      imageUrl: "https://vignette.wikia.nocookie.net/gameofthrones/images/0/02/MyrcellaS5Cropped.jpg/revision/latest/scale-to-width-down/339?cb=20160802025401"},
  ];
 
+
+
+ const characterBuilder = () => {
+     let domString = '';
+ characters.forEach((character) => {
+    domString += `<h3>${character.name}</h3>`;
+    domString += `<img src="${character.imageUrl}"></img>`;
+ })
+ printToDom(domString);
+};
+
+    export {characterBuilder};
+//for each is singular on the inside, characters to character
  
