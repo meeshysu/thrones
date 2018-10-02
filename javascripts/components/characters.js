@@ -1,4 +1,5 @@
- import {printToDom} from '../helpers/util.js';
+import {printToDom} from '../helpers/util.js';
+import {detailsBuilder} from './details.js';
  
  const characters = [
      {id: 'character1',
@@ -20,6 +21,13 @@
  ];
 
 
+
+ const characterClick = (e) => {
+    const characterId = e.target.closest('.character-card').id;
+    const currentCharacter = characters.find(x => x.id === characterId)
+        detailsBuilder(currentCharacter);
+};
+
 const createEvents = () => {
     const characterCards = document.getElementsByClassName('character-card')
     for(let i = 0; i < characterCards.length; i++) {
@@ -27,13 +35,6 @@ const createEvents = () => {
     }
 };
 
-const characterClick = (e) => {
-    const characterId = e.target.closest('.character-card').id;
-    const currentCharacter = characters.find((x) => {
-        return x.id === characterId
-    })
-    console.log(currentCharacter);
-};
 
  const characterBuilder = () => {
      let domString = '';
@@ -54,5 +55,5 @@ const characterClick = (e) => {
     export {characterBuilder};
 //for each is singular on the inside, characters to character
   //works for id or class . or # - gets the closest parentNode if they are on two different levels.
-    //.find is an array method
+  //.find is an array method
     //() the name you want to call when you are looping thru it, like an x, and you want to return the one that matches - a condition: when x.id is exactly equal to character.id
