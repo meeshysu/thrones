@@ -1,10 +1,12 @@
 import {printToDom} from '../helpers/util.js'
-import { characterBuilder } from './characters.js';
+import {characterBuilder, getCharacterz} from './characters.js';
 
 const closeButtonEvent = () => {
     const closeButton = document.getElementById('close');
-    closeButton.addEventListener('click', characterBuilder);
-};
+    closeButton.addEventListener('click', () => {
+        characterBuilder(getCharacterz());//pass in it the result of characterZ
+    });
+};//resolve the inside parenthesis first, get characterz returns an array. so when it calls character builder it returns an array. 
 
 const detailsBuilder = (character) => {
     let domString = '';
