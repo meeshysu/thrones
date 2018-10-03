@@ -1,5 +1,10 @@
+import {setCharacters, characterBuilder} from '../components/characters.js';
+
 function executeThisCodeAfterFileLoaded () {
-    console.log('request', this)//no arrows; they change what 'this' means. 
+    const data = JSON.parse(this.responseText);
+    setCharacters(data.characters);
+    characterBuilder();
+    // console.log('request', data.characters)//no arrows; they change what 'this' means. 
 }
 
 function executeThisCodeIfXhrFails () {

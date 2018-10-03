@@ -2,7 +2,6 @@
 import {getCharacters} from './data/charactersData.js'
 
 const initializeApp = () => {
-    // characterBuilder();
     getCharacters();
 };
 initializeApp();
