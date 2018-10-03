@@ -1,10 +1,11 @@
 import {printToDom} from '../helpers/util.js';
 import {detailsBuilder} from './details.js';
  
- const characters = [
- ];
+ let characters = [];
 
-
+ const setCharacters = (newArray) => {
+    characters = newArray;
+};
 
  const characterClick = (e) => {
     const characterId = e.target.closest('.character-card').id;
@@ -36,7 +37,7 @@ const createEvents = () => {
  createEvents();
 };
 
-    export {characterBuilder};
+    export {characterBuilder, setCharacters};
 //for each is singular on the inside, characters to character
   //works for id or class . or # - gets the closest parentNode if they are on two different levels.
   //.find is an array method
