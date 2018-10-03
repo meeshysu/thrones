@@ -7,6 +7,10 @@ import {detailsBuilder} from './details.js';
     characters = newArray;
 };
 
+const getCharacterz = () => {
+    return characters;
+};
+
  const characterClick = (e) => {
     const characterId = e.target.closest('.character-card').id;
     const currentCharacter = characters.find(x => x.id === characterId)
@@ -20,10 +24,25 @@ const createEvents = () => {
     }
 };
 
+const sortPeople = (e) => {
+    const house = e.target.id;
+    if(house === 'All') {
+    } else {
+        const filteredPeeps = characters.filter(x => x.house === house);
+        characterBuilder(filteredPeeps);
+    }
+}
 
- const characterBuilder = () => {
-     let domString = '';
- characters.forEach((character) => {
+const sortEvents = () => {
+    const allButton = document.getElementById('All');
+    const starkButton = document.getElementById('Stark');
+    allButton.addEventListener('click', sortPeople); //function sort people
+    starkButton.addEventListener('click', sortPeople);
+}
+
+ const characterBuilder = (charactersArray) => {
+    let domString = '';
+    charactersArray.forEach((character) => {
     domString += `<div class="col-2 character-card" id="${character.id}">`;
     domString +=    `<div class="card">`;
     domString +=    `<img class="card-img-top" src="${character.imageUrl}" alt="${character.name}">`;
@@ -36,8 +55,10 @@ const createEvents = () => {
  printToDom(domString);
  createEvents();
 };
+ 
 
-    export {characterBuilder, setCharacters};
+
+    export {characterBuilder, setCharacters, getCharacterz, sortEvents};
 //for each is singular on the inside, characters to character
   //works for id or class . or # - gets the closest parentNode if they are on two different levels.
   //.find is an array method

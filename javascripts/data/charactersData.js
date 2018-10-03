@@ -1,9 +1,9 @@
-import {setCharacters, characterBuilder} from '../components/characters.js';
+import {setCharacters, characterBuilder, getCharacterz} from '../components/characters.js';
 
 function executeThisCodeAfterFileLoaded () {
     const data = JSON.parse(this.responseText);
     setCharacters(data.characters);
-    characterBuilder();
+    characterBuilder(getCharacterz());
     // console.log('request', data.characters)//no arrows; they change what 'this' means. 
 }
 
