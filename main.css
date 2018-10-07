@@ -1,6 +1,12 @@
 body {
-    background-color: gray;
+    background-image: url(./images/GOT.jpg);
+    background-size: cover;
 }
+
+#bannerImg {
+    align-content: center;
+}
+
 .character-card {
     display: inline-block;
 }

@@ -3,60 +3,60 @@
         {
             "id": "character1",
             "name": "Brienne of Tarth",
-            "house": "House: Tarth",
+            "house": "Tarth",
             "imageUrl": "https://vignette.wikia.nocookie.net/gameofthrones/images/6/64/Brienne.PNG/revision/latest/scale-to-width-down/348?cb=20170822095536"},
         {
             "id": "character2",
             "name": "Jeor Mormont",
-            "house": "House: Mormont",
+            "house": "Mormont",
             "imageUrl": "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1b/Jeor_Mormont_Season_2.jpg/revision/latest/scale-to-width-down/333?cb=20120705014740"
         },
         {
             "id": "character3",
             "name": "Jaime Lannister",
-            "house": "House: Lannister",
+            "house": "Lannister",
             "imageUrl": "https://vignette.wikia.nocookie.net/gameofthrones/images/e/eb/Jaime.jpg/revision/latest/scale-to-width-down/296?cb=20170818052054"
         },
         {
             "id": "character4",
             "name": "Myrcella Baratheon",
-            "house": "House: Baratheon",
+            "house": "Baratheon",
             "imageUrl": "https://vignette.wikia.nocookie.net/gameofthrones/images/0/02/MyrcellaS5Cropped.jpg/revision/latest/scale-to-width-down/339?cb=20160802025401"
         },
         {
             "id": "character5",
             "name": "Jorah Mormont",
-            "house": "House: Mormont",
+            "house": "Mormont",
             "imageUrl": "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f5/706_Jorah_Profile.png/revision/latest/scale-to-width-down/350?cb=20170823224935"
         },
         {
             "id": "character6",
             "name": "Robb Stark",
-            "house": "House Stark",
+            "house": "Stark",
             "imageUrl": "https://vignette.wikia.nocookie.net/gameofthrones/images/5/50/S3E9_Robb_Stark_main.jpg/revision/latest/scale-to-width-down/327?cb=20160718071203"
         },
         {
             "id": "character7",
             "name": "Margaery Tyrell",
-            "house": "House: Tyrell",
+            "house": "Tyrell",
             "imageUrl": "https://vignette.wikia.nocookie.net/gameofthrones/images/b/b5/Margaery_Tyrell_S6.png/revision/latest?cb=20160729224605"
         },
         {
             "id": "character8",
             "name": "Ser Loras Tyrell",
-            "house": "House: Tyrell",
+            "house": "Tyrell",
             "imageUrl": "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a7/LorasHD3x06-0.png/revision/latest?cb=20150519170126"
         },
         {
             "id": "character9",
             "name": "Samwell Tarly",
-            "house": "House: Tarly",
+            "house": "Tarly",
             "imageUrl": "https://vignette.wikia.nocookie.net/gameofthrones/images/e/e9/Sam_at_Winterfell.jpg/revision/latest?cb=20170903200558"
         },
         {
             "id": "character10",
             "name": "Tyrion Lannister",
-            "house": "House: Lannister",
+            "house": "Lannister",
             "imageUrl": "https://amp.thisisinsider.com/images/59a5dd9cb065da49008b4878-750-563.png"
         }
     ]
