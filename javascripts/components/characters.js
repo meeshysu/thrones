@@ -37,8 +37,10 @@ const sortPeople = (e) => {
 const sortEvents = () => {
     const allButton = document.getElementById('All');
     const starkButton = document.getElementById('Stark');
+    const lannisterButton = document.getElementById('Lannister');
     allButton.addEventListener('click', sortPeople); //function sort people
     starkButton.addEventListener('click', sortPeople);
+    lannisterButton.addEventListener('click', sortPeople);
 };
 
  const characterBuilder = (charactersArray) => {

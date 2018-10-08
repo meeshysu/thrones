@@ -10,7 +10,7 @@ const closeButtonEvent = () => {
 
 const detailsBuilder = (character) => {
     let domString = '';
-    domString += `<div class="col-6 offset-md-3">`;
+    domString += `<div class="col-6 offset-md-3 text-light pb-5">`;
     domString +=   `<div class="row">`;
     domString +=     `<button class="btn btn-danger" id="close">x</button>`;
     domString +=   `</div>`;
