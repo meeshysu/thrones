@@ -4,7 +4,7 @@ Game of Thrones, what a show right? There are an unbelievable amount of characte
 
 ## Screenshot
 
-![main_screenshot1](images/GameOfThrones1.png)
+![main_screenshot1](images/GameofThrones1.png)
 
 ![main_screenshot2](images/GameOfThrones2.png)
 
