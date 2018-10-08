@@ -37,16 +37,20 @@ const sortPeople = (e) => {
 const sortEvents = () => {
     const allButton = document.getElementById('All');
     const starkButton = document.getElementById('Stark');
-    const lannisterButton = document.getElementById('Lannister');
+    const lannisterButton = document.getElementById('Lannister')
+    const mormontButton = document.getElementById('Mormont');
+    const tyrellButton = document.getElementById('Tyrell');
     allButton.addEventListener('click', sortPeople); //function sort people
     starkButton.addEventListener('click', sortPeople);
     lannisterButton.addEventListener('click', sortPeople);
+    mormontButton.addEventListener('click', sortPeople);
+    tyrellButton.addEventListener('click', sortPeople);
 };
 
  const characterBuilder = (charactersArray) => {
     let domString = '';
     charactersArray.forEach((character) => {
-    domString += `<div class="col-2 character-card" id="${character.id}">`;
+    domString += `<div class="col-2 character-card mx-4" id="${character.id}">`;
     domString +=    `<div class="card">`;
     domString +=       `<img class="card-img-top" src="${character.imageUrl}" alt="${character.name}">`;
     domString +=       `<div class="card-body">`;
