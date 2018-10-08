@@ -1,18 +1,18 @@
-import {setCharacters, characterBuilder, getCharacterz} from '../components/characters.js';
+import { setCharacters, characterBuilder, getCharacterz } from '../components/characters.js';
 
-function executeThisCodeAfterFileLoaded () {
+function executeThisCodeAfterFileLoaded() {
     const data = JSON.parse(this.responseText);
     setCharacters(data.characters);
     characterBuilder(getCharacterz());
     // console.log('request', data.characters)//no arrows; they change what 'this' means. 
-}
+};
 
-function executeThisCodeIfXhrFails () {
+function executeThisCodeIfXhrFails() {
     console.log('shit broke bruh');
-}
+};
 
 const getCharacters = () => {
-    let myRequest  = new XMLHttpRequest();
+    let myRequest = new XMLHttpRequest();
     myRequest.addEventListener('load', executeThisCodeAfterFileLoaded);//getting attached to the load event
     myRequest.addEventListener('error', executeThisCodeIfXhrFails);//getting attached to the error event
     myRequest.open('GET', './db/characters.json');//get request to the characters file
@@ -20,4 +20,4 @@ const getCharacters = () => {
     //no need to memorize this, just copy it. characters and var name will change that's all
 };
 
-export {getCharacters};
+export { getCharacters };
