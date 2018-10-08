@@ -1,6 +1,14 @@
 body {
-    background-color: gray;
+    background-image: url(./images/GOT.jpg);
+    background-size: cover;
 }
+
+#bannerImg {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
 .character-card {
     display: inline-block;
 }
@@ -11,4 +19,8 @@ body {
     object-fit: cover;
     object-position: 0 0;
     margin: 0 auto;
+}
+
+.card {
+    margin-bottom: 20px;
 }

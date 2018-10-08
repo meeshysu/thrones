@@ -13,7 +13,7 @@ const getCharacterz = () => {
 
  const characterClick = (e) => {
     const characterId = e.target.closest('.character-card').id;
-    const currentCharacter = characters.find(x => x.id === characterId)
+    const currentCharacter = characters.find(x => x.id === characterId);
         detailsBuilder(currentCharacter);
 };
 
@@ -27,29 +27,36 @@ const createEvents = () => {
 const sortPeople = (e) => {
     const house = e.target.id;
     if(house === 'All') {
+        characterBuilder(characters);
     } else {
         const filteredPeeps = characters.filter(x => x.house === house);
         characterBuilder(filteredPeeps);
     }
-}
+};
 
 const sortEvents = () => {
     const allButton = document.getElementById('All');
     const starkButton = document.getElementById('Stark');
+    const lannisterButton = document.getElementById('Lannister')
+    const mormontButton = document.getElementById('Mormont');
+    const tyrellButton = document.getElementById('Tyrell');
     allButton.addEventListener('click', sortPeople); //function sort people
     starkButton.addEventListener('click', sortPeople);
-}
+    lannisterButton.addEventListener('click', sortPeople);
+    mormontButton.addEventListener('click', sortPeople);
+    tyrellButton.addEventListener('click', sortPeople);
+};
 
  const characterBuilder = (charactersArray) => {
     let domString = '';
     charactersArray.forEach((character) => {
-    domString += `<div class="col-2 character-card" id="${character.id}">`;
+    domString += `<div class="col-2 character-card mx-4" id="${character.id}">`;
     domString +=    `<div class="card">`;
-    domString +=    `<img class="card-img-top" src="${character.imageUrl}" alt="${character.name}">`;
-    domString +=    `<div class="card-body">`;
-    domString +=    `<h5 class="card-title">${character.name}</h5>`;
-    domString +=    `</div>`;
-    domString +=    `</div>`;
+    domString +=       `<img class="card-img-top" src="${character.imageUrl}" alt="${character.name}">`;
+    domString +=       `<div class="card-body">`;
+    domString +=       `<h5 class="card-title">${character.name}</h5>`;
+    domString +=       `</div>`;
+    domString +=      `</div>`;
     domString += `  </div>`;
  })
  printToDom(domString);
@@ -58,7 +65,7 @@ const sortEvents = () => {
  
 
 
-    export {characterBuilder, setCharacters, getCharacterz, sortEvents};
+export {characterBuilder, setCharacters, getCharacterz, sortEvents};
 //for each is singular on the inside, characters to character
   //works for id or class . or # - gets the closest parentNode if they are on two different levels.
   //.find is an array method
